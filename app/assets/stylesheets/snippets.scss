@@ -3,6 +3,12 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .snippet-code {
-  background-color: black;
-  color: white
+  background-color: white;
+  color: white;
+  display: table;
+  margin: 0 auto;
+}
+
+.CodeRay {
+  text-align: left;
 }

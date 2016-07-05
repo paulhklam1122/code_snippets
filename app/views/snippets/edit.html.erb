@@ -1,6 +1,6 @@
 <h1>Edit snippet</h1>
 <%= @snippet.errors.full_messages.join(",") %>
-<%= form_for @snippet do |f| %>
+<%= bootstrap_form_for @snippet do |f| %>
   <p>Category <%= f.collection_select :category_id, Category.all, :id, :name %>
     <%= f.label(:private) %>
     <%= f.check_box(:private) %>

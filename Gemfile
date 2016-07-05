@@ -40,6 +40,10 @@ gem 'kaminari'
 gem 'coderay'
 gem 'redcarpet'
 gem 'cancancan', '~> 1.10'
+gem 'bootstrap-sass'
+gem 'bootstrap-glyphicons'
+gem 'bootswatch-rails'
+gem 'bootstrap_form'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -51,7 +55,10 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
-
+  gem 'spring'
+  gem 'interactive_editor'
+  gem 'awesome_print'
+  gem 'hirb'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
