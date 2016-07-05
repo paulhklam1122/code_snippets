@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   resources :users
   get "/changepassword" => "users#change_password", as: :change_password
   patch "/changepassword" => "users#update_password"
+
+  resources :password_resets, only: [:new, :create, :edit, :update]
+
   resource :sessions, only: [:new, :create] do
     delete :destroy, on: :collection
   end
