@@ -33,11 +33,7 @@
  // And finally bootswatch style itself
  @import "bootswatch/united/bootswatch";
 
-@import url(https://fonts.googleapis.com/css?family=Gloria+Hallelujah)
-
-.jumbotron,  {
-  background-color: #D01033 !important;
-}
+@import url(https://fonts.googleapis.com/css?family=Gloria+Hallelujah);
 
 html {
  background-image: image-url("code.jpg");
@@ -54,6 +50,9 @@ html {
   margin-top: 10px
 }
 
+.jumbotron {
+  background-color: #D01033 !important;
+}
 .container label {
   margin-top: 10px
 }
