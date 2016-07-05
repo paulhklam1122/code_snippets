@@ -7,6 +7,6 @@
   <%= link_to "Delete", snippet_path(@snippet), method: :delete, data: {confirm: "Are you sure you want to delete this snippet?"}  %>
 <% end %>
 
-<div class="snippet-code content text-left">
+<div class="snippet-code text-left">
 <%= CodeRay.scan(@snippet.work, snippet_language(@snippet)).div(:line_numbers => :table).html_safe %>
 </div>
